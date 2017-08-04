@@ -1,0 +1,14 @@
+<h1>Liste des gossips</h1>
+
+<%= @gossips.each do |gossip| %>
+
+<h2>
+<%= gossip.anonymous_author.capitalize %> -- <%= gossip.content %> -- 
+<%= link_to "Voir plus", gossip_path(gossip.id)%>
+</h2>
+	
+<%= link_to "Share your gossip !", new_gossip_path %> 
+<% end %>
+
+
+

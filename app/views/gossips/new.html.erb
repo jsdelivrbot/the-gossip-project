@@ -1,0 +1,13 @@
+<h1>Sign up !</h1>
+
+<%= form_for(@gossip) do |f| %>
+
+	<%= f.label :anonymous_author %>
+	<%= f.text_field :anonymous_author %>
+
+	<%= f.label :content %>
+	<%= f.text_field :content %>
+
+	<%= f.submit "Share my gossip", class:"btn btn-primary" %>
+
+	<% end %>
